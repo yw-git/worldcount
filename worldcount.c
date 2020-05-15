@@ -60,12 +60,13 @@ int main(int argc, char *argv[])
                     flag = 0;
                 }
 
-
+                // 边界控制
                 if (i == len - 1 && flag == 0)
                     world_count++;
             }
         }
-        printf("单词数为%d\n", world_count);
+        fclose(fp);
+        printf("单词数:%d\n", world_count);
         return 0;
     }
 }
